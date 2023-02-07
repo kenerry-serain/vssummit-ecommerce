@@ -9,7 +9,7 @@ resources:
       endpoint: vssummit-devops-connection
 
 extends:
-  template: src/template-dotnetcore-docker-k8s-backend.yml@templates
+  template: template-dotnetcore-docker-k8s-backend.yml@templates
   parameters:
       awsRegion: 'us-east-1'
       ecrImagePrefix: '968225077300.dkr.ecr.us-east-1.amazonaws.com'
