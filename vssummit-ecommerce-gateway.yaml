@@ -7,7 +7,6 @@ resources:
       type: git
       name: VSSummit-2023/vssummit-devops
       endpoint: vssummit-devops-connection
-
 extends:
   template: template-dotnetcore-docker-k8s-backend.yml@templates
   parameters:
