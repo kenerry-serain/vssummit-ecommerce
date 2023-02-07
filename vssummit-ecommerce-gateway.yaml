@@ -12,6 +12,6 @@ extends:
   parameters:
       awsRegion: 'us-east-1'
       ecrImagePrefix: '968225077300.dkr.ecr.us-east-1.amazonaws.com'
-      ecrRepository: 'ecommerce/production/gateway-api'
+      ecrRepositoryProd: 'ecommerce/production/gateway-api'
       dockerFilePath: 'VsSummitEcommerce/VsSummitEcommerce.Gateway/Dockerfile'
       dockerBuildContext: '.'
