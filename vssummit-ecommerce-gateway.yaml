@@ -5,7 +5,7 @@ resources:
   repositories:
     - repository: templates
       type: git
-      name: SalesBox/SalesBox.DevOps
+      name: VSSummit-2023/vssummit-devops
       endpoint: vssummit-devops-connection
 
 extends:
