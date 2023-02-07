@@ -1,0 +1,18 @@
+trigger:
+- none
+
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: SalesBox/SalesBox.DevOps
+      endpoint: vssummit-devops-connection
+
+extends:
+  template: src/template-dotnetcore-docker-k8s-backend.yml@templates
+  parameters:
+      awsRegion: 'us-east-1'
+      ecrImagePrefix: '968225077300.dkr.ecr.us-east-1.amazonaws.com'
+      ecrRepository: 'ecommerce/production/gateway-api'
+      dockerFilePath: 'VsSummitEcommerce/VsSummitEcommerce.Gateway/Dockerfile'
+      dockerBuildContext: '.'

@@ -12,7 +12,6 @@ builder.Services.AddHealthChecksUI(options =>
 {
     options.SetEvaluationTimeInSeconds(5);
     options.MaximumHistoryEntriesPerEndpoint(10);
-    //options.AddHealthCheckEndpoint("API com Health Checks", "/health");
 })
 .AddInMemoryStorage();
 
