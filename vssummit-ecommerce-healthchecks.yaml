@@ -1,0 +1,17 @@
+trigger:
+- none
+
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: VSSummit-2023/vssummit-devops
+      endpoint: vssummit-devops-connection
+extends:
+  template: template-dotnetcore-docker-k8s-backend.yml@templates
+  parameters:
+      awsRegion: 'us-east-1'
+      ecrImagePrefix: '968225077300.dkr.ecr.us-east-1.amazonaws.com'
+      ecrRepositoryProd: 'ecommerce/production/healthcheck-api'
+      dockerFilePath: 'VsSummitEcommerce/VsSummitEcommerce.Healthchecks/Dockerfile'
+      dockerBuildContext: 'VsSummitEcommerce/.'
