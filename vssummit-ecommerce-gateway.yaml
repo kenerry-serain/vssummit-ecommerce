@@ -14,4 +14,4 @@ extends:
       ecrImagePrefix: '968225077300.dkr.ecr.us-east-1.amazonaws.com'
       ecrRepositoryProd: 'ecommerce/production/gateway-api'
       dockerFilePath: 'VsSummitEcommerce/VsSummitEcommerce.Gateway/Dockerfile'
-      dockerBuildContext: '.'
+      dockerBuildContext: 'VsSummitEcommerce/.'
