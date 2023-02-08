@@ -13,5 +13,5 @@ extends:
       awsRegion: 'us-east-1'
       ecrImagePrefix: '968225077300.dkr.ecr.us-east-1.amazonaws.com'
       ecrRepositoryProd: 'ecommerce/production/healthcheck-api'
-      dockerFilePath: 'VsSummitEcommerce/VsSummitEcommerce.Healthchecks/Dockerfile'
+      dockerFilePath: 'VsSummitEcommerce/VsSummitEcommerce.HealthChecks/Dockerfile'
       dockerBuildContext: 'VsSummitEcommerce/.'
