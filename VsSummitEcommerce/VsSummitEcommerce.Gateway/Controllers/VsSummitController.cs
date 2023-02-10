@@ -9,7 +9,7 @@ namespace VsSummitEcommerce.Gateway.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok("It's working!");
+            return Ok("It's working from pipeline!!");
         }
     }
 }
