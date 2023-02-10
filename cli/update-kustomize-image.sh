@@ -32,7 +32,7 @@ pushChangesToGitOpsRepository(){
     git add ./kustomization.yaml;
     git config --local user.email "kenerry.software.engineer@gmail.com";
     git config --local user.name "Kenrry Serain";
-    git commit -m "Updating Kustomization Image ${ECRIMAGEPREFIX}/${ECRREPOSITORY}:${BUILDNUMBER}";
+    git commit -m "[VsSummit] Updating Image Version ${ECRIMAGEPREFIX}/${ECRREPOSITORY}:${BUILDNUMBER}";
     git push "${REPOSITORY}" HEAD:main;
 }
 
